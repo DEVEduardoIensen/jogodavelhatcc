@@ -17,7 +17,7 @@ function play(y) {
         }
     }
 
-    /* Win Types */
+    /* tipos de vitoria */
 
     checkWinner(1, 2, 3);
     checkWinner(4, 5, 6);
@@ -28,7 +28,7 @@ function play(y) {
     checkWinner(1, 5, 9);
     checkWinner(3, 5, 7);
 
-    /* No Winner */
+    /* nenhum vencedor */
 
     if (moves == 9 && isGameOver == false) { draw(); }
 
@@ -64,7 +64,7 @@ function resetGame() {
 }
 
 function gameOver(a) {
-    var gameOverAlertElement = "<b>GAME OVER </b><br><br> Player " + span[a].dataset.player.toUpperCase() + ' Win !!! <br><br>' + restartButton;
+    var gameOverAlertElement = "<b>GAME OVER </b><br><br> Player " + span[a].dataset.player.toUpperCase() + ' Won !!! <br><br>' + restartButton;
     var div = document.createElement("div");
     div.className = "alert";
     div.innerHTML = gameOverAlertElement;
